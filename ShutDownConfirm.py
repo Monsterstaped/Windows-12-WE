@@ -28,7 +28,7 @@ class ShutdownConfirm(QWidget):
             border-radius: 22px;
             color: white;
         """)
-        self.label = QLabel("Виключити систему?", self)
+        self.label = QLabel("Turn Off System?", self)
         self.label.setAlignment(Qt.AlignCenter)
         self.label.setGeometry(0, 30, 420, 40)
         self.label.setAutoFillBackground(True)
@@ -38,9 +38,9 @@ class ShutdownConfirm(QWidget):
         background-color: transparent;
         color: red;}
         """)
-        self.ok = QPushButton("Виключити", self)
+        self.ok = QPushButton("Turn off", self)
         self.ok.setGeometry(60, 100, 130, 40)
-        self.cancel = QPushButton("Скасувати", self)
+        self.cancel = QPushButton("Cancel", self)
         self.cancel.setGeometry(230, 100, 130, 40)
         for btn in (self.ok, self.cancel):
             btn.setStyleSheet("""
